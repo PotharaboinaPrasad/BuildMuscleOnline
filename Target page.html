@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Target Muscles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right, #1d1d1d, #121212);
+      color: white;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: #ff3c00;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .muscle-card {
+      background-color: #222;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .muscle-card:hover {
+      transform: scale(1.05);
+    }
+
+    .muscle-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 3px solid #ff3c00;
+    }
+
+    .muscle-card h3 {
+      padding: 15px;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #ffb380;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Target Muscle Groups</h1>
+  <div class="grid-container">
+    <div class="muscle-card" onclick="location.href='Chest.html'">
+      <img src="chest.jpg" alt="Chest">
+      <h3>Chest</h3>
+    </div>
+    <div class="muscle-card" onclick="location.href='Legs.html'">
+      <img src="legs.jpg" alt="Legs">
+      <h3>Legs</h3>
+    </div>
+    <div class="muscle-card" onclick="location.href='Abs.html'">
+      <img src="abs.jpg" alt="Abs">
+      <h3>Abs</h3>
+    </div>
+    <div class="muscle-card" onclick="location.href='Back.html'">
+      <img src="back.jpg" alt="Back">
+      <h3>Back</h3>
+    </div>
+    <div class="muscle-card" onclick="location.href='Shoulders.html'">
+      <img src="shoulders.jpg" alt="Shoulders">
+      <h3>Shoulders</h3>
+    </div>
+    <div class="muscle-card" onclick="location.href='Arms.html'">
+      <img src="arms.jpg" alt="Biceps/Triceps">
+      <h3>Biceps / Triceps</h3>
+    </div>
+  </div>
+</body>
+</html>
+
+

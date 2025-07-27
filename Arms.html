@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arms Exercises</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+  body {
+  background-color: #111; /* from white to black */
+  color: white; /* ensures text is visible on dark background */
+}
+
+.exercise-card {
+  background-color: #1c1c1c; /* darker card background instead of white */
+  color: #fff;
+}
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      color:#007bff
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.1rem;
+      color: #007bff;
+      margin-bottom: 30px;
+    }
+
+    .section-header {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: white;
+      padding: 20px;
+      margin: 40px 0 30px 0;
+      border-radius: 5px;
+    }
+
+    .section-header h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .exercises-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .exercise-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .exercise-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .exercise-media img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .exercise-info {
+      padding: 25px;
+    }
+
+    .exercise-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .exercise-description {
+      color: #110b0b;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .view-exercise-btn {
+      background: #007bff;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .view-exercise-btn:hover {
+      background: #0056b3;
+    }
+
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      font-size: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #0056b3;
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .exercises-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+      }
+
+      .container {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="back-btn" onclick="location.href='Target page.html'" title="Back to Target Muscles">←</button>
+
+  <div class="container">
+    <div class="header">
+      <h1>Arms Exercises</h1>
+      <p> Build powerful, defined arms with targeted workouts that sculpt your biceps, triceps, and forearms for ultimate strength and style.</p>
+    </div>
+
+    <div class="section-header">
+      <h2>Best Arms Exercises</h2>
+    </div>
+
+    <div class="exercises-grid">
+      <!--  Barbell biceps Press -->
+      <div class="exercise-card">
+        <a href="Exercises/barbell biceps curl_0.mp4" target="_blank" class="exercise-media">
+          <img src="Exercises/barbell-curl-1.jpg" alt="Bicep curl">
+        </a>
+        <div class="exercise-info">
+          <h3 class="exercise-title">Barbell Bicep curl</h3>
+          <p class="exercise-description">Barbell curls are a classic bicep-building exercise that emphasize muscle growth and strength by lifting a barbell in a controlled motion, helping you develop thicker, more defined arms and improve overall upper body aesthetics.</p>
+          <button class="view-exercise-btn" onclick="window.open('Exercises/barbell biceps curl_0.mp4', '_blank')">View Exercise</button>
+        </div>
+      </div>
+
+      <!-- Hammer curls -->
+      <div class="exercise-card">
+        <a href="Exercises/hammer curl_1.mp4" target="_blank" class="exercise-media">
+          <img src="Exercises/Hammer-Curl.png" alt="Hammer Curls">
+        </a>
+        <div class="exercise-info">
+          <h3 class="exercise-title">Hammer Curls</h3>
+          <p class="exercise-description">Hammer curls are a bicep exercise that targets both the biceps brachii and brachialis muscles by lifting dumbbells in a neutral grip, promoting balanced arm development and enhancing grip strength.</p>
+</p>
+          <button class="view-exercise-btn" onclick="window.open('Exercises/hammer curl_1.mp4', '_blank')">View Exercise</button>
+        </div>
+      </div>
+
+      <!-- Concentration curls -->
+      <div class="exercise-card">
+        <a href="Exercises/concentration curls.mp4" target="_blank" class="exercise-media">
+          <img src="Exercises/concentration curls.webp" alt="Upright rows">
+        </a>
+        <div class="exercise-info">
+          <h3 class="exercise-title">Concentration curls</h3>
+          <p class="exercise-description">Concentration curls are a focused bicep isolation exercise performed in a seated position, allowing you to maximize muscle contraction and build peak bicep definition by lifting the weight with strict form and full control.
+</p>
+          <button class="view-exercise-btn" onclick="window.open('Exercises/concentration curls.mp4', '_blank')">View Exercise</button>
+        </div>
+      </div>
+
+      <!-- Preacher curls -->
+      <div class="exercise-card">
+        <a href="Exercises/preacher curls.mp4" target="_blank" class="exercise-media">
+          <img src="Exercises/preacher curls.webp" alt="preacher curls">
+        </a>
+        <div class="exercise-info">
+          <h3 class="exercise-title">Preacher Curls</h3>
+          <p class="exercise-description">
+Preacher curls isolate the biceps by eliminating momentum, allowing for a strict and controlled movement that targets the lower portion of the biceps to enhance size, strength, and peak development</p>
+          <button class="view-exercise-btn" onclick="window.open('Exercises/preacher curls.mp4', '_blank')">View Exercise</button>
+        </div>
+      </div>
+
+     <!-- Tricep Pushdown -->
+<div class="exercise-card">
+  <a href="Exercises/tricep Pushdown_11.mp4" target="_blank" class="exercise-media">
+    <img src="Exercises/tricep-pushdown.png" alt="tricep Pushdown">
+  </a>
+  <div class="exercise-info">
+    <h3 class="exercise-title">Tricep Pushdown</h3>
+    <p class="exercise-description">Tricep pushdowns are a cable-based isolation exercise that targets the triceps by extending the arms downward, helping to build stronger, more defined arms with improved muscle tone and control.</p>
+    <button class="view-exercise-btn" onclick="window.open('Exercises/tricep Pushdown_11.mp4', '_blank')">View Exercise</button>
+  </div>
+</div>
+
+<!-- Dips -->
+<div class="exercise-card">
+  <a href="Exercises/tricep dips_12.mp4" target="_blank" class="exercise-media">
+    <img src="Exercises/tricep dips.webp" alt="tricep Dips">
+  </a>
+  <div class="exercise-info">
+    <h3 class="exercise-title">Dips</h3>
+    <p class="exercise-description">Dips are a powerful bodyweight exercise that target the triceps, chest, and shoulders by lowering and lifting the body between parallel bars, helping to build upper body strength, muscle mass, and definition.</p>
+    <button class="view-exercise-btn" onclick="window.open('Exercises/tricep dips_12.mp4', '_blank')">View Exercise</button>
+  </div>
+</div>
+
+<!-- Overhead Tricep Extension -->
+<div class="exercise-card">
+  <a href="Exercises/overhead tricep extension.mp4" target="_blank" class="exercise-media">
+    <img src="Exercises/over head tricep extension.jpg" alt="Tricep overhead Extension">
+  </a>
+  <div class="exercise-info">
+    <h3 class="exercise-title">Overhead Tricep Extension</h3>
+    <p class="exercise-description">Overhead tricep extensions target the long head of the triceps by extending the arms above the head, helping to build size and definition in the upper arms while improving muscle balance and control.</p>
+    <button class="view-exercise-btn" onclick="window.open('Exercises/overhead tricep extension.mp4', '_blank')">View Exercise</button>
+  </div>
+</div>
+
+<!-- one arm tricep extension -->
+<div class="exercise-card">
+  <a href="Exercises/one hand extension.mp4" target="_blank" class="exercise-media">
+    <img src="Exercises/tricep extension.webp" alt="Tricep extension">
+  </a>
+  <div class="exercise-info">
+    <h3 class="exercise-title">One Hand Tricep Extension</h3>
+    <p class="exercise-description">The one-hand tricep extension isolates each arm individually, allowing for focused contraction and balanced tricep development by extending the arm overhead in a controlled motion</p>
+    <button class="view-exercise-btn" onclick="window.open('Exercises/one hand extension.mp4', '_blank')">View Exercise</button>
+  </div>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

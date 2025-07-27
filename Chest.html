@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chest Exercises</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+  body {
+  background-color: #111; /* from white to black */
+  color: white; /* ensures text is visible on dark background */
+}
+
+.exercise-card {
+  background-color: #1c1c1c; /* darker card background instead of white */
+  color: #fff;
+}
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      color:#007bff
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.1rem;
+      color: #007bff;
+      margin-bottom: 30px;
+    }
+
+    .section-header {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: white;
+      padding: 20px;
+      margin: 40px 0 30px 0;
+      border-radius: 5px;
+    }
+
+    .section-header h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .exercises-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .exercise-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .exercise-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .exercise-media img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .exercise-info {
+      padding: 25px;
+    }
+
+    .exercise-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .exercise-description {
+      color: #110b0b;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    .view-exercise-btn {
+      background: #007bff;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .view-exercise-btn:hover {
+      background: #0056b3;
+    }
+
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      font-size: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #0056b3;
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      .exercises-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+      }
+
+      .container {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="back-btn" onclick="location.href='Target page.html'" title="Back to Target Muscles">←</button>
+
+  <div class="container">
+    <div class="header">
+      <h1>Chest Exercises</h1>
+      <p>Chest exercises. Learn how to build a big, strong and muscular chest.</p>
+    </div>
+
+    <div class="section-header">
+      <h2>Best Chest Exercises</h2>
+    </div>
+
+    <div class="exercises-grid">
+      <!--  Bench Press -->
+      <div class="exercise-card">
+        <a href="Exercises/bench press_10.mp4" target="_blank" class="exercise-media">
+          <img src="Flat bench press.jpg" alt="Dumbbell Bench Press">
+        </a>
+        <div class="exercise-info">
+          <h3 class="exercise-title">Flat Rod Bench Press</h3>
+          <p class="exercise-description">A fundamental chest exercise that targets the pectoralis major, anterior deltoids, and triceps.</p>
+          <button class="view-exercise-btn" onclick="window.open('Exercises/bench press_10.mp4', '_blank')">View Exercise</button>
+        </div>
+      </div>
+
+      <!-- Incline Bench Press -->
+      <div class="exercise-card">
+        <a href="Exercises/incline bench press_10.mp4" target="_blank" class="exercise-media">
+          <img src="incline bench press.avif" alt="Incline Bench Press">
+        </a>
+        <div class="exercise-info">
+          <h3 class="exercise-title">Incline Bench Press</h3>
+          <p class="exercise-description">Targets the upper portion of the chest muscles. Essential for developing a well-rounded chest.</p>
+          <button class="view-exercise-btn" onclick="window.open('Exercises/incline bench press_10.mp4', '_blank')">View Exercise</button>
+        </div>
+      </div>
+
+      <!-- Decline bench -->
+      <div class="exercise-card">
+        <a href="Exercises/decline bench press_10.mp4" target="_blank" class="exercise-media">
+          <img src="decline bench press.webp" alt="Chest Dip">
+        </a>
+        <div class="exercise-info">
+          <h3 class="exercise-title">Decline Bench Press</h3>
+          <p class="exercise-description">Effectively targets the lower chest.</p>
+          <button class="view-exercise-btn" onclick="window.open('Exercises/decline bench press_10.mp4', '_blank')">View Exercise</button>
+        </div>
+      </div>
+
+      <!-- Chest Fly Machine -->
+      <div class="exercise-card">
+        <a href="Exercises/chest fly machine_1.mp4" target="_blank" class="exercise-media">
+          <img src="chest fly.jpeg" alt="Chest Fly Machine">
+        </a>
+        <div class="exercise-info">
+          <h3 class="exercise-title">Chest Fly Machine</h3>
+          <p class="exercise-description">Isolates the chest muscles. Perfect for inner chest and muscle definition.</p>
+          <button class="view-exercise-btn" onclick="window.open('Exercises/chest fly machine_1.mp4', '_blank')">View Exercise</button>
+        </div>
+      </div>
+
+      <!-- Push-Up -->
+      <div class="exercise-card">
+        <a href="Exercises/push-up_0.mp4" target="_blank" class="exercise-media">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1000&q=80" alt="Push-Up">
+        </a>
+        <div class="exercise-info">
+          <h3 class="exercise-title">Push-Up</h3>
+          <p class="exercise-description">A classic bodyweight exercise that targets the entire chest, shoulders, and triceps.</p>
+          <button class="view-exercise-btn" onclick="window.open('Exercises/push-up_0.mp4', '_blank')">View Exercise</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
